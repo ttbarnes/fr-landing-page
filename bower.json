@@ -1,5 +1,7 @@
 {
   "name": "fiona-ross",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "normalize.css": "~3.0.2"
+  }
 }
