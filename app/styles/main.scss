@@ -7,9 +7,8 @@ body {
     family:'Lato', Arial, sans-serif;
     size:16px;
   }
-  text-align:center;
+  text-align:left;
   @media (min-width:768px) {
-    text-align:left;
     font-size:18px;
   }
 }
@@ -55,16 +54,15 @@ img {
 
 .wrapper {
   width:100%;
-  max-width:1024px;
+  max-width:1400px;
   margin:0 auto;
 }
 
 
 .hero {
-  @include mobile-desktop-spacing;
-  padding-top:10px;
   position:relative;
   z-index:1;
+  margin-bottom:20px;
   @media(min-width:768px) {
     padding-top:0;
     margin-bottom:70px;
@@ -126,9 +124,19 @@ img {
   @include mobile-desktop-spacing;
 }
 
+.intro-text {
+  margin-bottom:20px;
+  @media(min-width:768px) {
+    margin-bottom:70px;
+  }
+}
 
 .social-icons {
   text-align:center;
+  margin-bottom:20px;
+  @media(min-width:768px) {
+    margin-bottom:70px;
+  }
   li {
     text-align:center;
     margin-bottom:0.5em;
@@ -177,6 +185,20 @@ img {
 
 .footer {
   text-align:center;
+  margin-bottom:20px;
+  color:$grey-dark-1;
+  a {
+    color:$grey-dark-1;
+    text-decoration:underline;
+    @media (min-width:768px) {
+      transition:all 0.1s ease;
+      &:hover,
+      &:focus {
+        text-decoration:none;
+        color:$grey-light-1;
+      }
+    }
+  }
   p {
     margin-bottom:0;
   }

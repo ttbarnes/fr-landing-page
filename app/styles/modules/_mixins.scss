@@ -1,15 +1,12 @@
 @mixin mobile-desktop-spacing {
-  padding:0 10px;
-  @media(min-width:600px) {
-    padding:0 20px;
-  }
+  padding:0 5%;
 }
 
 @mixin heading-text-shadow {
-  text-shadow:0 7px 4px $black-full;
+  text-shadow:0 6px 3px $black-full;
 }
 
 @mixin heading-text-shadow-short {
-  text-shadow:0 5px 3px $black-full;
+  text-shadow:0 5px 2px $black-full;
 }
 
