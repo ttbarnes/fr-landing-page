@@ -3,7 +3,10 @@
 body {
   background:$black-full;
   color:$grey-light-1;
-  font-family:'Lato', Arial, sans-serif;
+  font:{
+    family:'Lato', Arial, sans-serif;
+    size:18px;
+  }
 }
 
 h1,
