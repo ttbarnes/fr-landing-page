@@ -1,7 +1,7 @@
 @import 'base';
 
 body {
-  background:$black-full;
+  background:$black-1;
   color:$grey-light-1;
   font:{
     family:'Lato', Arial, sans-serif;
@@ -20,6 +20,7 @@ h3,
 h4,
 h5 {
   margin:0 0 20px 0;
+  font-weight:normal;
 }
 
 p {
@@ -58,14 +59,66 @@ img {
   margin:0 auto;
 }
 
+
 .hero {
   @include mobile-desktop-spacing;
   padding-top:10px;
+  position:relative;
+  z-index:1;
   @media(min-width:768px) {
     padding-top:0;
+    margin-bottom:70px;
   }
   img {
     width:100%;
+  }
+  //.text.desktop-only {
+  .text {
+    width:55%;
+    position:absolute;
+    z-index:2;
+    top:25%;
+    left:5%;
+    text-align:left;
+  }
+  h1 {
+    @include heading-text-shadow;
+    margin-bottom:0;
+    color:$white-full;
+    font-size:2em;
+    font-size:8vw;
+    @media (min-width:500px) {
+      font-size:3em;
+      font-size:8.5vw;
+    }
+    @media (min-width:768px) {
+      font-size:4em;
+      font-size:8vw;
+    }
+    @media (min-width:850px) {
+      font-size:5em;
+    }
+    @media (min-width:1000px) {
+      font-size:5.5em;
+    }
+  }
+  h2 {
+    @include heading-text-shadow-short;
+    color:$purple-light-1;
+    font-size:1em;
+    font-size:4vw;
+
+    @media (min-width:500px) {
+      font-size:1.5em;
+      font-size:4vw;
+    }
+    @media (min-width:768px) {
+      font-size:1.7em;
+      font-size:4vw;
+    }
+    @media (min-width:850px) {
+      font-size:1.9em;
+    }
   }
 }
 

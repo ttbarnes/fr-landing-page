@@ -4,3 +4,12 @@
     padding:0 20px;
   }
 }
+
+@mixin heading-text-shadow {
+  text-shadow:0 7px 4px $black-full;
+}
+
+@mixin heading-text-shadow-short {
+  text-shadow:0 5px 3px $black-full;
+}
+
