@@ -47,6 +47,10 @@ dd {
   list-style-type:none;
 }
 
+img {
+  max-width:100%;
+}
+
 
 .wrapper {
   width:100%;
@@ -59,6 +63,9 @@ dd {
   padding-top:10px;
   @media(min-width:768px) {
     padding-top:0;
+  }
+  img {
+    width:100%;
   }
 }
 
