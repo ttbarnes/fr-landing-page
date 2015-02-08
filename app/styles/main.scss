@@ -65,7 +65,7 @@ img {
   margin-bottom:20px;
   @media(min-width:768px) {
     padding-top:0;
-    margin-bottom:70px;
+    margin-bottom:50px;
   }
   img {
     width:100%;
@@ -134,7 +134,10 @@ img {
 .social-icons {
   text-align:center;
   margin-bottom:20px;
-  @media(min-width:768px) {
+  @media (min-width:500px) {
+    margin-bottom:50px;
+  }
+  @media (min-width:768px) {
     margin-bottom:70px;
   }
   li {
@@ -143,7 +146,7 @@ img {
     &:last-child {
       margin-bottom:0;
     }
-    @media (min-width:768px) {
+    @media (min-width:500px) {
       display:inline-block;
       vertical-align:top;
       margin-bottom:0;
